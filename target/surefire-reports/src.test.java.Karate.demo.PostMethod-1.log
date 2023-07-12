@@ -1,0 +1,39 @@
+12:37:57.143 request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer b66f057d9b936a10608ef7554bde7b2f8c627c5ddee399ec4e7e14a2e71129b1
+1 > Connection: Keep-Alive
+1 > Content-Length: 88
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_281)
+{"name":"Kuptaq11","email":"guaa71_j211j@bednar.info","gender":"male","status":"active"}
+
+12:37:58.499 response time in milliseconds: 1347.84
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7e576cff9e6a196d-FRA
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 12 Jul 2023 07:03:20 GMT
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Fhbt66Cpy2zrICxpPIHQvIqUF3VgiOKzxne%2FYCE4VEp%2Bpcn%2FjBwS%2FxuOJzdfUtYYNAWZKpYxl88QzOp5z9GzXNwWLljNJS8Rd%2BDr95uGH5pE%2FTAkbnfHTXREdd8ILLU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3=":443"; ma=86400
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 89
+1 < x-ratelimit-reset: 1
+1 < x-request-id: 2d9afae5-4955-4f97-98df-db3c219f68b0
+1 < x-runtime: 0.030949
+1 < x-xss-protection: 0
+[{"field":"email","message":"has already been taken"}]
+
+12:37:58.499 status code was: 422, expected: 201, response time: 1348, url: https://gorest.co.in/public/v2/users, response: [{"field":"email","message":"has already been taken"}]

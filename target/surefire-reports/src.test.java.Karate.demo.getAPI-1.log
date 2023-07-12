@@ -1,0 +1,33 @@
+12:40:56.820 request:
+1 > GET https://gorest.co.in/public/v2/users/3582327
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_281)
+
+12:40:58.085 response time in milliseconds: 1258.24
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7e57716229c21e56-FRA
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 12 Jul 2023 07:06:20 GMT
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=C22IuCoQwF1ISp5TVPfeQyLWZa%2BoCcyT%2Bfv4TpaEZtHookpZma0ckQe5LNNpg4EX8iHqIbucEP0LMO0IEBN2k4P2wrZK%2FzgoIMMAwQ5W3WHscPYVXgMOetEkjgK9VRk%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3=":443"; ma=86400
+1 < etag: W/"083c60b3223ec86431f683cd6068c6b7"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 423c12a5-2337-4b0a-be75-1a7b22fce099
+1 < x-runtime: 0.009794
+1 < x-xss-protection: 0
+{"id":3582327,"name":"Diptendu Namboothiri","email":"namboothiri_diptendu@gerhold.test","gender":"female","status":"active"}
+
+12:40:58.085 [print] Response of the API is->{id=3582327, name=Diptendu Namboothiri, email=namboothiri_diptendu@gerhold.test, gender=female, status=active}
